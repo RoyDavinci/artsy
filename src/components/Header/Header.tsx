@@ -90,8 +90,8 @@ export const Header = () => {
 					<div
 						className={
 							!show
-								? "sidebar__header__container p-6 absolute sidebar__header__container__close"
-								: "sidebar__header__container p-6 absolute"
+								? "sidebar__header__container px-6 py-2 absolute sidebar__header__container__close"
+								: "sidebar__header__container px-6 py-2 absolute"
 						}
 					>
 						<div className='flex justify-between items-center'>

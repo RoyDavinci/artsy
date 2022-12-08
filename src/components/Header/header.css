@@ -18,7 +18,7 @@
 	padding: 10px;
 }
 .mobile-nav .MuiSvgIcon-root {
-	font-size: 34px;
+	font-size: 30px;
 }
 .sidebar__header__container {
 	min-height: 100vh;
@@ -28,7 +28,8 @@
 	background-color: #fff;
 }
 .sidebar__header__container h1 {
-	font-size: 60px;
+	font-size: 50px;
+	margin: 0.4em 0;
 }
 .close__header__icon .MuiSvgIcon-root {
 	width: 2.3em;
@@ -54,8 +55,8 @@
 .header__chat__container .MuiSvgIcon-root {
 	color: #fff;
 	font-size: 30px !important;
-	width: 1.5em;
-	height: 1.5em;
+	width: 1.3em;
+	height: 1.3em;
 }
 .sidebar__header__container__close {
 	display: none;
