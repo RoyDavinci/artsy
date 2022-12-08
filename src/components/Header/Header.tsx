@@ -33,7 +33,7 @@ export const Header = () => {
 		return () => {
 			console.log("cleared on unmount");
 		};
-	}, []);
+	}, [isMobile]);
 	console.log(isMobile);
 
 	return (
