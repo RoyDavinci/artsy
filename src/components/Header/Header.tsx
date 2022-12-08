@@ -30,11 +30,8 @@ export const Header = () => {
 	// create an event listener
 	useEffect(() => {
 		window.addEventListener("resize", handleResize);
-		return () => {
-			console.log("cleared on unmount");
-		};
+		return () => window.removeEventListener("resize", handleResize);
 	}, [isMobile]);
-	console.log(isMobile);
 
 	return (
 		<header className='header__container lg:mx-32'>
