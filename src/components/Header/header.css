@@ -21,7 +21,7 @@
 	font-size: 30px;
 }
 .sidebar__header__container {
-	min-height: 100vh;
+	min-height: 95vh;
 	width: 100%;
 	top: 0;
 	z-index: 2;
