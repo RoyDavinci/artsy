@@ -13,6 +13,7 @@ export const Header = () => {
 	const [indexValue, setIndexValue] = useState<number>(0);
 	const [isMobile, setIsMobile] = useState<boolean>(false);
 	const [show, setShow] = useState<boolean>(false);
+	const [windowWidth, setWindowWidth] = useState<number>(0);
 
 	const handleIndex = (value: number) => {
 		setIndexValue(value);
@@ -25,17 +26,19 @@ export const Header = () => {
 		} else {
 			setIsMobile(false);
 		}
+		setWindowWidth(window.innerWidth);
 	};
 
 	// create an event listeners
 	useEffect(() => {
+		setWindowWidth(window.innerWidth);
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
-	}, [isMobile]);
+	}, [isMobile, windowWidth]);
 
 	return (
 		<header className='header__container lg:mx-32'>
-			{!isMobile ? (
+			{windowWidth >= 860 && !isMobile ? (
 				<nav className='flex justify-between items-center'>
 					<h1>ARTSY</h1>
 					<ul className='flex'>
@@ -114,7 +117,6 @@ export const Header = () => {
 													: `/${item.toLowerCase()}`
 											}
 											className='text-2xl'
-											onClick={() => handleIndex(index)}
 										>
 											{item}
 										</Link>
