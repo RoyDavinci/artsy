@@ -1,13 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
+import { Header } from "./components";
+import { Routes, Route } from "react-router-dom";
+import { Auction, Drop, Home, MarketPlace } from "./pages";
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<div className='App'>
-			<h1>Welcome To Jesus...!!!!!</h1>
+			<Header />
+			<Routes>
+				<Route path='/' element={<Home />}></Route>
+				<Route path='/auctions' element={<Auction />}></Route>
+				<Route path='/marketplace' element={<MarketPlace />}></Route>
+				<Route path='/drop' element={<Drop />}></Route>
+			</Routes>
 		</div>
 	);
 }

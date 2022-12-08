@@ -1,0 +1,12 @@
+.padding {
+	display: inline-block;
+	border-bottom: 1px solid black;
+	padding-bottom: 2px;
+}
+.header__container nav ul li {
+	margin: 0px 10px;
+}
+.header__container nav ul li i {
+	font-weight: 700;
+	font-size: 22px;
+}

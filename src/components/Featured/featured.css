@@ -1,0 +1,37 @@
+.featured__items__containerr h2 {
+	font-family: STIX Two Text;
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 50px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin-bottom: 30px;
+}
+.featured__items__container__div {
+	border-top: 1px solid #ccc;
+	padding: 50px 0px;
+}
+.featured__items__containerr p {
+	font-family: "Satoshi" sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 30px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin-bottom: 30px;
+}
+.featured__items__container__div svg {
+	padding: 10px;
+	font-size: 50px;
+	border: 0.5px solid black;
+	border-radius: 50%;
+}
+.rounded__images {
+	display: flex;
+}
+.rounded__images img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	object-fit: cover;
+}
