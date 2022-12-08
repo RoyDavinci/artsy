@@ -27,7 +27,7 @@ export const Header = () => {
 		}
 	};
 
-	// create an event listener
+	// create an event listeners
 	useEffect(() => {
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
