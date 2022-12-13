@@ -34,10 +34,10 @@ export const Header = () => {
 		setWindowWidth(window.innerWidth);
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
-	}, [isMobile, windowWidth]);
+	}, [isMobile, windowWidth, window.innerWidth]);
 
 	return (
-		<header className='header__container lg:mx-32'>
+		<header className='header__container lg:mx-24'>
 			{windowWidth >= 860 && !isMobile ? (
 				<nav className='flex justify-between items-center'>
 					<h1>ARTSY</h1>

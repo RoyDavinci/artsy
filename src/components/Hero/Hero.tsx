@@ -18,7 +18,7 @@ export const Hero = () => {
 		return () => {
 			console.log("cleared on unmount");
 		};
-	}, []);
+	}, [isMobile, window.innerWidth]);
 	console.log(isMobile);
 	return (
 		<section className='hero__container__items flex flex-col justify-center items-center text-center lg:my-10'>

@@ -7,7 +7,7 @@ import { items } from "../../assets/index";
 
 export const Featured = () => {
 	return (
-		<div className='featured__items__containerr lg:mx-32'>
+		<div className='featured__items__containerr lg:mx-24'>
 			{items.map((item, index) => {
 				return index % 2 === 0 ? (
 					<div

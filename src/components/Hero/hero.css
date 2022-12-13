@@ -1,21 +1,13 @@
-.hero__container__items .largeScreenHeader {
+.hero__container__items h1 {
 	font-family: "Clash Display", sans-serif;
-
 	font-size: 80px;
 	font-weight: 600;
 	line-height: 125px;
 	letter-spacing: 0px;
 	/* text-align: center; */
 }
-.hero__container__items .mobileScreenHeader {
-	font-family: "Clash Display", sans-serif;
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 48px;
-	letter-spacing: 0em;
-	/* text-align: center; */
-}
-.hero__container__items .largeScreenParagraph {
+
+.hero__container__items p {
 	font-family: "Satoshi", sans-serif;
 	font-size: 28px;
 	font-weight: 500;
@@ -23,11 +15,22 @@
 	letter-spacing: 0em;
 	/* text-align: center; */
 }
-.hero__container__items .mobileScreenParagraph {
-	font-family: "Satoshi", sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 25px;
-	letter-spacing: 0em;
-	/* text-align: center; */
+
+@media screen and (max-width: 720px) {
+	.hero__container__items h1 {
+		font-family: "Clash Display", sans-serif;
+		font-size: 32px;
+		font-weight: 500;
+		line-height: 48px;
+		letter-spacing: 0em;
+		/* text-align: center; */
+	}
+	.hero__container__items p {
+		font-family: "Satoshi", sans-serif;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 25px;
+		letter-spacing: 0em;
+		/* text-align: center; */
+	}
 }
