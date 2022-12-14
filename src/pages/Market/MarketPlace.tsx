@@ -7,11 +7,14 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { marketPlaceImage } from "../../assets/index";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Footer, Newsletter } from "../../components";
+import { useGlobalContext } from "../../context";
 
 export const MarketPlace = () => {
 	const [checkBoxShow, setCheckBoxShow] = useState<boolean>(false);
 	const [showPrice, setShowPrice] = useState<boolean>(false);
 	const [showArtist, setShowArtist] = useState<boolean>(false);
+
+	const data = useGlobalContext();
 
 	return (
 		<main className='marketPlaceContainer'>
