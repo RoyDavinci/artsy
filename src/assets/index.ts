@@ -5,6 +5,15 @@ import homePageFourth from "./ARTSY (Copy)/Homepage carousel WEB.png";
 import firstFeatured from "./ARTSY (Copy) (1)/Featured product.png";
 import secondFeatured from "./ARTSY (Copy) (1)/Featured product-1.png";
 import thirdFeatured from "./ARTSY (Copy) (1)/Featured product 3.png";
+import marketPlace1 from "./new/Rectangle 299.png";
+import marketPlace2 from "./new/Rectangle 251.png";
+import marketPlace4 from "./new/Rectangle 50.png";
+import marketPLace3 from "./new/Rectangle 48.png";
+import marketplace5 from "./new/Rectangle 52.png";
+import marketPlace6 from "./new/Rectangle 53.png";
+import marketPlace7 from "./new/Rectangle 54.png";
+import marketPlace8 from "./new/Rectangle 55.png";
+import news from "./new/Rectangle 49.png";
 
 export const homepage = [
 	homePageFirst,
@@ -34,5 +43,53 @@ export const items = [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor pur",
 		content: "64 major creators",
 		image: firstFeatured,
+	},
+];
+
+export const marketPlaceImage = [
+	{
+		name: "PHILOMENA '22",
+		image: marketPlace2,
+		price: 3.9,
+	},
+	{
+		name: "BOOLEAN EGYPTIAN",
+		image: marketPlace1,
+		price: 3.9,
+	},
+	{
+		name: "BLANK",
+		image: marketPLace3,
+		price: 3.9,
+	},
+	{
+		name: "ELIXIR",
+		image: marketPlace4,
+		price: 3.9,
+	},
+	{
+		name: "THE LAWMAKERS",
+		image: marketplace5,
+		price: 3.9,
+	},
+	{
+		name: "VEIL",
+		image: marketPlace6,
+		price: 3.9,
+	},
+	{
+		name: "ALTERNATING",
+		image: marketPlace7,
+		price: 3.9,
+	},
+	{
+		name: "ROSEMARY '22",
+		image: marketPlace8,
+		price: 3.9,
+	},
+	{
+		name: "BEVERLY",
+		image: news,
+		price: 3.9,
 	},
 ];
