@@ -48,47 +48,47 @@ export const items = [
 
 export const marketPlaceImage = [
 	{
-		name: "PHILOMENA '22",
+		name: "Philomena '22",
 		image: marketPlace2,
 		price: 3.9,
 	},
 	{
-		name: "BOOLEAN EGYPTIAN",
+		name: "Boolean Egyptian",
 		image: marketPlace1,
 		price: 3.9,
 	},
 	{
-		name: "BLANK",
+		name: "Blank",
 		image: marketPLace3,
 		price: 3.9,
 	},
 	{
-		name: "ELIXIR",
+		name: "Eixir",
 		image: marketPlace4,
 		price: 3.9,
 	},
 	{
-		name: "THE LAWMAKERS",
+		name: "The Lawmakers",
 		image: marketplace5,
 		price: 3.9,
 	},
 	{
-		name: "VEIL",
+		name: "Veil",
 		image: marketPlace6,
 		price: 3.9,
 	},
 	{
-		name: "ALTERNATING",
+		name: "Alternating",
 		image: marketPlace7,
 		price: 3.9,
 	},
 	{
-		name: "ROSEMARY '22",
+		name: "Rosemary '22",
 		image: marketPlace8,
 		price: 3.9,
 	},
 	{
-		name: "BEVERLY",
+		name: "Beverly",
 		image: news,
 		price: 3.9,
 	},

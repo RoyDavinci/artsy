@@ -8,6 +8,7 @@ import { marketPlaceImage } from "../../assets/index";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Footer, Newsletter } from "../../components";
 import { useGlobalContext } from "../../context";
+import { Link } from "react-router-dom";
 
 export const MarketPlace = () => {
 	const [checkBoxShow, setCheckBoxShow] = useState<boolean>(false);
@@ -123,15 +124,17 @@ export const MarketPlace = () => {
 				<article className='items__article__marketplace__container'>
 					{marketPlaceImage.map((item, index) => {
 						return (
-							<div key={index}>
-								<img src={item.image} alt='' />
+							<Link to={`/marketplace/${item.name}`} key={index}>
 								<div>
-									<p className='my-4 text-[16px]'>{item.name}</p>
-									<strong>
-										<p className='font-bold	text-[20px] my-3'>${item.price}</p>
-									</strong>
+									<img src={item.image} alt='' />
+									<div className='mx-3'>
+										<p className='my-4 text-[16px]'>{item.name}</p>
+										<strong>
+											<p className='font-bold	text-[20px] my-3'>${item.price}</p>
+										</strong>
+									</div>
 								</div>
-							</div>
+							</Link>
 						);
 					})}
 				</article>

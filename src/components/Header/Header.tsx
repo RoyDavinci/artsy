@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -15,6 +15,8 @@ export const Header = () => {
 	const [show, setShow] = useState<boolean>(false);
 	const [windowWidth, setWindowWidth] = useState<number>(0);
 
+	const location = useLocation();
+
 	const handleIndex = (value: number) => {
 		setIndexValue(value);
 	};
@@ -28,6 +30,12 @@ export const Header = () => {
 		}
 		setWindowWidth(window.innerWidth);
 	};
+
+	useEffect(() => {
+		if (location.pathname.includes("marketplace")) {
+			setIndexValue(1);
+		}
+	}, [location]);
 
 	// create an event listeners
 	useEffect(() => {
